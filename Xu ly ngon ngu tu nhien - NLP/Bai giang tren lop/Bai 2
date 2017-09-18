@@ -1,0 +1,42 @@
+ =########## BUOI THU 2#############
+- LL(1) : qua trinh phan tich cu phap parser doc tu trai sang phai 
+- LR(1) : qua trinh phan tich tao cu phap trai, goi la 1 khi ma bat dau phan tich thi nhan du lieu nhap la 1 (bat buoc), de tim ve phai luan sinh 
+A-> BC 
+- Phuong phap: from bottom to up theo bieu do
+	- Tai moi thoi diem, trien khai tat ca cac kha nang.
+	- Ko bi back-stacking, nahnh hon nhungn phai co bo chua.
+	- Nguyen tac giai thuat mo rong cung
+	- N^3 la do phuc tap
+- Phuong phap: Van pham mang truyen - Transition network Gramer
+	- Moi luan sinh co 1 mang truyen, va ket hop lai
+	- Dung mang truyen automat huu han 
+	- Khi lui no ko quay lai tu dau no quay lai noi no bi stuck.
+
+-> Can nam ro cac qui tac , vi du ve cac phuong phap luan sinh. Qui tac luat.
+
+- Phuong phap : phan tich cu phap tu tren xuong theo bieu do:
+	- Khi chon mo rong , no se chon do uu tien
+	- Neu dang di dung cay, no ko trien khai nhanh them ma tiep tu trien khai theo nhanh di tiep
+	- Cai nao no uu tien trien khai thi no trien khai tiep,
+	- Giup thuat toan nay uu diem hon 2 pp kia
+	
+BAI TAP : hay dinh nghia Lexicon  cho cau tuong ung  “ The man walked the old dlog”.
+**Giai bai tap 1b va bai 2 , nop truoc ngay CN 24/9/2017 ( giai het cho roi)**
+-------
+
+		CHUONG 4 : NET VA VAN PHAM GIA TO
+
+	- Ngon ngu tu nhien theo pp cam ngu canh, 
+	- Giai thuat de co the dien ta cam ngu canh. 
+	- Dung cac features de dac trung cho cac ngu canh.
+	- Dua vao cac mau ( I give Mary the book/ I give tthe book to Mary) , neu sai thi ko check nua.
+	- Cac nét: VFROM, SUBCAT. Nét giới từ PFORM.
+	- Mot so he thong net co ban cho Tieng Ah <tt>
+	- Chuong 4 : S[-INV]: k co su dich chuyen cac thanh phan, chuong 5 : S[+INV]: co su dich chuyen trong cau, co the la 1 phan trong cau hoi.
+	- [-pas] or [+passive} : bi dong hay ko.
+	- Dung ? de cho phu hop giua ve ket hop cac mao tu , vidu : nhu ket hop so it va so nhieu.
+	- Hinh 4.1 cac net dc nhung vao cay cu phap cua NP.(no them number va singular )
+	- NP la gia tri gi thi do (gia tri giao dung cua cac nhanh con)
+	- AGR : su phu hop .  saw co 3 gia tri de dien ta nhung nghia khac nhau.
+	Cac feature dua vao luan sinh va feature.  
+

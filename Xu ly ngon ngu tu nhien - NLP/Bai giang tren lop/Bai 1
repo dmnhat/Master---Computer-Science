@@ -1,0 +1,91 @@
+# Xu ly ngon ngu tu nhien 
+	PGS.TS Phan Thi Tuoi
+Chuong 1-2 : Dai cuong 
+Chuong 3 : noi dung chinh
+<b>Book on slides</b>
+Chuong 1: co so ngon ngu ve triet, tam ly hoc
+Chuong 2: Co so ngon ngu, dung tieng Anh de phan ty 
+Chuong 3:
+ - Van  pham 
+ - feature ve gioi tu, 
+ - compiler  (Nguyen ly ngon ngu lap trinh - Mr.Phung),
+ - back-tracking
+ - cu phap phai co tinh de qui, automat trang thai huu han .
+Chuong 4: Net va van pham gia to
+Chuong 5: 
+- Tro dong tu,
+- cum dong tu : giai quyet bai toan ve Y/N Question WIS question (What, When)
+Chuong 6: 
+- Push down stack. 
+CHuong 7 :  Xac suat thong ke, gan nhan tu loai cho cac tu.
+Chuong 8 : Logic to form.( ma trung gian)
+- Trinh bien dich goi Java, C#, Pascal la ma trung gian (ma dich, chuong trinh chay java goi la ma thuc thi)
+Chuong 9:
+- Co ma trung gian trong nn lap trinh -> ma may
+- Dung chinh qua trinh ptich cu phap va thuc the - > cay luan ly.  
+Chuong 10: Giai quyet nhap nhang
+- 1 cau 3 nghia, no sse giai quyet de lay dung 1 nghia.
+Chuong 11: Chien thuat dien dich, dien nghia
+- chon cum tu mang nghia nao do -> cay mang ngu nghia nao do(Phan tich nong) - da huong den 1 domain cu the nao do roi.
+Chuong 12: Suy dien va bieu dien tri thuc
+- bieu dien tren FOPC
+- xay dung he thong hoi dap 
+
+James Allen , 1995 - Natural Language Processioning, the Benjaming/Cumming Publish
+
+#### bai tap lon ( SDH bat buoc 30%,discuss late)  - lam chuong trinh con, group seminar - OPEN
+- **bai tap: 20%(sau moi chuong)** 
+**- kiem tra giua : 40%(1->giua)**
+**-  kiem tra cuoi HK : 40%(giua - cuoi)**
+
+- Lam bai tap cac bai phan tich cay luan sinh, cach sinh ra so do, bang ket luan.
+
+---------
+						CHUONG 1 : GIOI THIEU
+- Nhat muon lam may tinh the he thu 4, ko lap trinh chi noi , tiep xuc truc tiep.
+- Nghien cuu ngu nghia, cac tu ket hop ra 1 nghia dung ko phai nhi sau
+- Ex:  I saw the man who saw the wood by saw.
+- Chuong 3: bai tap phan tich theo bieu do 
+- Tam ly cung anh huong den ngu nghia, hoan canh.
+- Tritology
+- xet den nhung vung may tinh co the thuc thie, tren text, dialogue (not voice now)
+- dung nhieu trong deeplearning .
+- Trich rut 1 doan dai va thay the tat ca bang vai cau de tom tat lai.(tom tat van ban)
+- danh gia hop den, danh gia thuy tinh ( LUAN VAN: DANH GIA TINH HIEU QUA CUA HE THONG <GRASS-BOX> 
+- cach tac dong cua cac tu, dong tu voi nhau rat quan trong, moi tu co gia tri ~cam xuc~.
+- van pham phu thuoc phan tich ngu nghia cho ra cac quan he, huong nghien cuu hien nay. 
+- dong tham chieu dai tu( I,It, That , Who , Whom).
+- dung nhung ngon ngu may tinh co the hieu dc de dien ta ( toan hoc va logic)
+- cay cu phap + luan ly - > lgoic to form.
+- logic to form ko co ngu canh, muon co ngu canh phai o rang buoc phat ngon. 
+
+------
+			CHUONG 2:  CO SO NGON NGU VA CU PHAP TIENG ANH
+-  cum dong tu rat quan trong : trong tam hanh vi, hanh dong the hien o dong tu  -> tao ra moi quan he
+
+
+--------
+
+	CHUONG 3: VAN PHAP VA PHAN TICH CU PHAP
+
+- G0, G1, G2, G3 ( Regular) : nha toan hoc qua phan tich ngon ngu
+- Cac rang buoc cua G0: P : alpha -> B 
+- Cac loai van pham (o phai tren)
+- Khi chung ta co cay cu phap , chung ta co dan xuat va nguoc lai 
+- Dan xuat( qua trinh tao ra luan sinh) , la qua trinh tim ra cau hop hoac ko hop le voi van pham.
+- Co cu phap cay <-> Dan xuat . <1>
+- Qua trinh app dung lien tuc luan sinh goi la dan xuat. 
+- Thuoc tinh dac biet cua van ban phi ngu canh :  <1>
+- WORLD : tree-bank, ngan hang cay luan sinh .
+- G3 : bat o muc tu vung (token ) ko bat o muc ngu phap. A -> aB( A,B la dai dien cho key hieu ko ket thuc, a(lowercase) ky hieu luan sinh  ket thuc.
+- Regular expression.
+- bieu thuc chinh qui sinh ra atomat (mo hinh toan hoc: don dinh va ko don dinh) <compiler again =))>
+- Automat bo nhan dang ra cac TOKEN , cai nao la id, cai nao la letter. 
+- Van pham phi nghu canh la la Push down stack (autoact
+- 2pp nghien cuu TOP DOWN, Bottom up . 
+- Qua trinh tim dan xuat la phai tim bang duoc ve cay , ra dc handle.
+- Qua trinh tim dan xuat phai dc ( trai - phai, phai trai )
+- Yeu to de qui de no cu phap .
+- LL1 : ngon ngu lap trinh thuong dung
+- Dung stack de luu cac lua chon khac nhau.
+- kY hieu van pham xuat hien ben trai luan sinh, con lai la ky hieu ket thuc ( ben trai nhu ART, N, V, ADJ..)
