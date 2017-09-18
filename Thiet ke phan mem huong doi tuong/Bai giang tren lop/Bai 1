@@ -1,0 +1,19 @@
+
+1. thuan nhat - de thay doi, don gian.   Phai co tuong tac(tinh noi ket) voi cac thanh phan khac trong sys( thap nhat)
+2. Bao dong func cua chinh minh, ban than obj co tinh ket dinh cao (cac func cua obj phai lien he chat che, the hien ban chat cua no)
+3. Han che nhung func goi ra  phai tu lam .
+4. Quan ly theo cay phan cap.
+
+-------
+					CHUONG 1 : CAU TRUC PM HDT
+1. 2 muc do du lieu  : dung chung cho  tat ca cac ham chuc nang, du lieu cuc bo cho tung ham.
+2. PM HDT : dac ta doi tuong cau thanh app.
+3. Goc nhin su dung ( interfacE)
+4. Bien doi tuong nen dat ten theo interface ko boi bang class.
+5. Ma Unicode window la 2bytes, java tren platform la 4bytes
+6. Unicode dung san, Unicode to hop.
+7. Phat bieu Class la quyet dinh .
+8. Thuoc tinh luan ly (get/set - duoi su kiem soat cua doi tuong )
+9. Tinh thua ke :  
+10. Tinh bao gop.
+11. 
