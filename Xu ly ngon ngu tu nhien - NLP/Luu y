@@ -1,0 +1,12 @@
+- Doc them ve EUGENE GOODSTMAN : he thong doi 	thoai
+ELIZA
+- Tại sao không dùng luôn câu để biểu diễn nghiã cuả nó ?. Vì câu có thể có nhiều nghiã ( senses)
+- FOPC : First Order Predicate Calculus
+- CFG(Van pham phi ngu canh)
+- 
+
+* Surface Text -> Tokenization -> Lexical analysis -> Syntatic analysis -> Semantic analaysis -> Pragmatic analysis.
+
+* Lexical Analysis : Phan tich tu vung.
+* Syntactic Parsing : Phan tich cu phap.
+* Semantic Parsing : Phan tich ngu nghia.

@@ -1,0 +1,15 @@
+
+1/ Cho văn phạm  
+      S   →    NP  VP
+      NP  →    ART N
+      NP  →    ART ADJ N
+      VP  →    V
+      VP  →     V NP
+
+   Hãy định nghĩa Lexicon tương ứng cho câu “The man walked the old dog “. Hãy trình bày quá trình phân tích cú pháp cho câu trên theo:
+a)  phương pháp từ trên xuống đơn giản;
+phương pháp phân tích biểu đồ  từ trên xuống/từ dưới lên.
+
+2) Cho văn phạm ở câu 1, hãy xây dựng văn phạm mạng truyền đệ quy (RTN) tương đương. Hãy phân tích câu “The man walked the old dog“ bằng văn phạm RTN.
+
+**Giai bai tap 1b va bai 2 , nop truoc ngay CN 24/9/2017 ( giai het cho roi)**
