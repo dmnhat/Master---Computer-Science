@@ -1,0 +1,14 @@
+--------------------------------	CHUONG 1: Tong Quan ve KPDL ----------------------------------
+
+ -	Thong tin hien tai chi la cac transaction, cu ko pnhieu data de dua ra knowledge.
+ -	Tap du lieu phai du lon : 
+ -	Pattern:
+ 		+ valid,
+ 		+ novel(du moi): nhung tinh huong moi ma phai dung datamining .
+ 		+ potential useful
+
+-	PCA KDD .
+-	Classification : cung la du doan nhung ra lop, dac trung, phan loai < Phan lop du lieu >
+-	Prediction	:	chu yeu ra so,
+-	Unsupervised giai bai toan ve clustering.
+-	Supervised giai bai toan ve classification.

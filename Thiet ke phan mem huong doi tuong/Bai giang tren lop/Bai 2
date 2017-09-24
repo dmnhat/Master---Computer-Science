@@ -1,0 +1,25 @@
+
+----------------------- CHUONG 2 -------------------------
+
+- 	Tinh da xa : vi tri khac nhau, do tuuong khac nhau se thi hanh tac vu ckhac nhau cua doi tuong khac nhau
+-	Tinh tong quat hoa :
+		+ Xu dung 1 class chung  class<T>.
+		+ Thong quan interface quan trong va phai can than -> implement roi thi kho doi.
+		+ 
+
+----------------------- CHUONG 3 -------------------------
+			INTERFACE & CLASS trong C#
+
+- 	NameSpace trong C#: System.Object.hahahaha
+-	Public > protected or internal > (protected | internal) > Internal
+-	Toan tu chuc nang(operator) la toan tu dac biet(static), cai dat san trong Object cha, chi co the override. thuong la ve toan.
+-	Thuoc tinh  giao tiep ( luan ly)
+-	Delegate 
+		+	Ex: Rectangler xuatRectangler();
+-	Event
+		+	La khai niem nguoi dung action, ko co ham nao trong ban than object goi	.
+		+	Ex: onclick, onTouch....
+-	Indexes < important > trong C3 giong array.
+-	
+
+
