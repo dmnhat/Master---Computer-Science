@@ -1,0 +1,49 @@
+
+I.	Architecting Scaling:
+
+-	Tu bai toan tren may tinh lon ta ap dung xuong may pho thong.
+-	SIMD : Singer Instruction Multiple Data :: 1 lenh nhung thao tac tren nhieu vung du lieu khac nhau ( multiple core), dong bo nhu nhau 
+(tren 1 dong code)
+MMID + SIMD = SPMD (moi chuong trinh 1 core..)
+-	CPU ->>>>PCi->>>>GPU : ngen, data nhieu truyen qua GPU bi gioi han data, 
+xu huong chuyen GPU vao CPU, truy xuat thang memory. 
+-	CLuster co the thuan la multicore hoac la lai .(Multicore va Many-Core)
+-	Intel Xeon Phi Coprocessor Core Architecture: 
+	Kien truc may, thanh ghi can 32, 64 thi se thuc hien nhieu phep tinh hon.
+	Vd : integer 1 thanh ghi nho la 8 bit hoac 4bit thi se lam , tang giam vung nho .
+-	Xeon Phi doi moi ko can xai PCI chuyen qua socket luon.
+-	Intel co MKL cho xu ly manycore(off-load mode)
+-	Compiler ngon ngu co support cho off-load mode hay ko ?
+-	Vector Reduction with offload
+-	MPI support giao tiep cac Data o cac CPU va offload qua MIC
+-	Tao ket noi cac MPI thi phai tao cac process, process hien tai dang nam tren CPU.
+
+II. GPU
+-	SIMP 
+-	Lap trinh CUDA cho parallel CIS Pensy
+-	Parellel Reduction :
+		+	Vd :  Sum of 1 day.
+-	Inclusive va Exclusive cua Navie Parallel Scan, no can nlog(n) do phuc tap .
+-	Work-Efficent parallel Scan: Balanced binary tree
+		+	Up-Sweep	: bai toan thu gom : 
+		+ 	Down-Sweep	: bai toan phan ra xuong tu bai toan thu gom.
+-	--> Kien truc minh chay, thuat toan dua tren SIMP.
+
+- 	Stream compaction : 
+		+	Dac ta, loc theo dieu kien yeu cau.
+		+	Ham filter trong song song :  
+				+Qua vd ta bik dc vi tri cua kq can ghi, dan den ko dung do co the dung SIMP.
+		+	 Bai toan summed area table : scan theo chieu huong 2 chieu .
+		+	Thu vien co cac thuat toan .
+
+-	doi voi cac bai toan ma tran thuong loai bo thanh phan ko tinh (hang =0) -> Nhan ma tran thua.
+-	Sparse matric multiplaation with scan.
+	+	Segment Scan:
+		+	Down/Up Sweet giy ta giai bai toan nay hieu qua.
+		+	Giup chung ta thu giam cac phep toan va ko gian luu tru.
+		+ 	Sau bai toan thu gom cua Segmant ta dua bai toan ve Down@ up sweet de de dang implement.
+
+
+	==> GIAI THUAT SIMP, Lam sao de data dua lot dc tren bo nho, tiet kiem ko gian bo nho . 
+
+
