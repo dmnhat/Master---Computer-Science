@@ -1,0 +1,62 @@
+Seminal note:
+
+I. Understanding Big Data: 
+
+- Tac gia goi IBM InfoShere Streams la Stream 
+- Va stream of data la stream.
+
+- Streams provides a rich traffic flow in some of their most congested citites by levaraging GPS data transmitted via taxis, traffic flow cameras, and traffic sensors embeeded in roadways to provide intelligent traffic management. This help them predict traffic pattern and adjust traffic light timings to improve the flow of traffic.
+
+-Streams is all about analytics on data in motion.
+
+- Streams is similar in nature in that some data elements start off a flow which moves from operator to operator, with the ouput of one operator becoming the input for the next.
+
+- T he big difference of course is that with the game Dominoes, once a tile/tail/ falls down, that's the end of it, whereas with Streams,the data continously flows through the system at very high rates of speed, allowing you to analyze a never-ending flow of in-formation continously.
+
+
+What's a Stream
+
+In a more technical sense, a stream is a graph of nodes connected by edges.Each node in the graph is an operator or adapter that will process the data within the stream in some way. 
+(Understanding Big Data -  130)
+
+Data flows through a stream in what are known as tuples. In a relational db sense, you can think of them as rows of data. However, when  Streams works on semi-structured, and unstructured data, a tuple is an abstraction to represent a package of data(tuple = set of attributes for given object)
+some operators work on an individual tuple, transoforming the data and then passing it along. Other operators need to work on groups of tuples before they sen our results.Ex:sort data.
+-> Some operators work on a window of data, which is essentially a set of tuples that are grouped together.The operator itself will define how many tuples are in the window based on the window expression inside the operator.
+
+There are many other ways to define a window. (co the la tap tuples can xu ly trong 10s, hoac la bundle 10 typles cho dau ra data)
+
+* Important concepet to understand in that Streams is not just about manipulating one tuple at a time, but rather analyzing large sets of data in real time.
+
+II. The Streams Processing Language:
+(As author said : Streams is IBM InfoShere  Streams)
+The Streams Processing Language(SPL)
+-	Streams-based app written in SPL are compiled using the Streams compiler, which turns them into binary(bin) excutable code, which then runs in the Streams env to accomplish the tasks on the various servers in the cluster.
+Ex: read a file and upperCase all line and send it to output. 
+-	The power of Streams is that i can run massively parallel jobs across large clusters of servers where each operator, or a gorup of operators , can be running on a separate server.
+
+III. Source and Sink Adapters:
+
+- It goes without saying that (to be completely obvious or true) in order to perform analysis on a stream of data, the data has to enter the stream.
+IBM Infoshere Streams: FileSource, FileSink, TCPSource/UDPSource and TCPSink/UDPSink.
+
+Export and Import adapters work together within a stream, can assign to streamId, other stream app in the same instance can import this data using the assigned streamID, can access and stream data between apps running under the same Streams instance.
+
+MetricsSink:	allow to setup a named meter and as a gauge(geidz) can monitor using Streams Studio.
+				can be used to monitor the volume and velocity of data flfowing outof data stream.
+
+Operators:		operators are at the heart of the Streams alaytical engine. it takes data from upstream adapters or other operators, manipulate that data , and then move the sulting tuples downstream to the next operator.
+
+Filter: its purpose is to allow only some of the streaming contents to pass.we can setup specify a second output port, to receive any tuples that did not satisfy the specified condition.
+
+Functor:		operator reads from the input stream, transforms them in some way, and sends those typles to an output stream.
+
+Punctor:		operator adds punctuation into the stream, which can then be used downstream to separate the stream into multiple windows.
+
+Sort:			outputs the same tuples it receives, but in a specified sorted order.
+How can you sort the data, bcz you don't know if the next tuple to arrive will need to be sorted to the first tuple you must send as output. Streams allow us to specify a window on which you want to operate.
+		+	count:	number of tuples to include in the window
+		+	delta:	wait until a given attribute of an element in stream has chanded a specified 				delta amount.
+		+	time:	max time in seconds you want to wait to allow the window fill up
+		+	punctuation:	used to delimite the  window.
+
+
